@@ -9,8 +9,64 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>
+            Тип питомца
+            <select name="petType">
+                <option value="dog" selected>Собачка</option>
+                <option value="cat">Кошка</option>
+                <option value="pig">Свинка</option>
+                <option value="maus">Мышка</option>
+            </select>
+        </label>
+        <label>
+            Пол
+            <label>
+                <input type="radio" name="gender" value="boy"> Мальчик
+            </label>
+            <label>
+                <input type="radio" name="gender" value="girl"> Девочка
+            </label>
+            <label>
+                <input type="radio" name="gender" value="none"> Не решил еще
+            </label>
+        </label>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" value="#654321">
+        </label>
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" value="10" min="0" max="100">
+        </label>
+        <label>
+            Имя питомца
+            <input type="text" name="name" value="Майсик" placeholder="Введите имя">
+        </label>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" value="2026-01-01">
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" value="fan9mice@mail.ru" placeholder="Введите email">
+        </label>
+        <label>
+            Телефон
+            <input type="tel" name="phone" value="+7676767676" placeholder="Введите телефон">
+        </label>
+        <label>
+            <input type="checkbox" name="rules" value="true">
+            Я согласен с правилами
+        </label>
+        <label>
+            <button type="submit">Заказать питомца</button>
+        </label>
+        <label>
+            <button type="reset">Сбросить</button>
+        </label>
 
+    </form>
 </main>
 </body>
 </html>
